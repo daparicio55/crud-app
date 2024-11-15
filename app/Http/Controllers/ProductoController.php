@@ -36,4 +36,9 @@ class ProductoController extends Controller
         $producto->update();
         return redirect('/productos');
     }
+    public function destroy($id){
+        $producto = Producto::find($id);
+        $producto->delete();
+        return redirect('/productos');
+    }
 }
