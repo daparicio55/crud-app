@@ -20,3 +20,5 @@ Route::put('/productos/{producto}',[ProductoController::class,'update']);
 Route::get('/clientes',[ClienteController::class,'index']);
 Route::get('/clientes/create',[ClienteController::class,'create']);
 Route::post('/clientes',[ClienteController::class,'store']);
+Route::get('/clientes/{cliente}/edit',[ClienteController::class,'edit']);
+Route::put('/clientes/{cliente}',[ClienteController::class,'update']);
