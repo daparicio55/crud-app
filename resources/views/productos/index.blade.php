@@ -11,7 +11,7 @@
 
 <body>
     <div class="container">
-        <h1>Lista de Productos</h1>
+        <h1>Lista de Productitos</h1>
         <a class="btn btn-primary" href="{{ asset('/productos/create') }}">
             Registrar Nuevo
         </a>
