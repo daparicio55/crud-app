@@ -18,6 +18,9 @@
            <th>ID</th>
            <th>Numero</th>
            <th>Fecha</th>
+           <th>Cliente</th>
+           <th>DNI</th>
+           <th></th>
         </thead>
         <tbody>
            @foreach ($ventas as $venta)
@@ -25,7 +28,15 @@
                 <td>{{ $venta->id }}</td>
                 <td>{{ $venta->numero }}</td>
                 <td>{{ $venta->fecha }}</td>
-               </tr>
+                <td>{{ $venta->cliente->apellidos }}, 
+                    {{ $venta->cliente->nombres }}</td>
+                <td>{{ $venta->cliente->dni }}</td>
+                <td>
+                    <a href="{{ route('ventas.edit',$venta->id) }}" 
+                        class="btn btn-success">Editar</a>
+                    <a href="" class="btn btn-danger">Eliminar</a>
+                </td>
+            </tr>
            @endforeach
         </tbody>
     </table>

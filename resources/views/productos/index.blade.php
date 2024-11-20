@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Lista de Productitos</h1>
-        <a class="btn btn-primary" href="{{ asset('/productos/create') }}">
+        <a class="btn btn-primary" href="{{ route('productos.create') }}">
             Registrar Nuevo
         </a>
         <table class="table">
