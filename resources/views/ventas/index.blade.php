@@ -34,6 +34,7 @@
                 <td>
                     <a href="{{ route('ventas.edit',$venta->id) }}" 
                         class="btn btn-success">Editar</a>
+                    <a href="" class="btn btn-info">Mostrar Detalles</a>
                     <a href="" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
