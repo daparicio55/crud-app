@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Cliente;
+use App\Models\Producto;
 use App\Models\Venta;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -17,7 +18,9 @@ class VentaController extends Controller
     }
     public function create(){
         $clientes = Cliente::get();
-        return view('ventas.create',compact('clientes'));
+        $productos = Producto::orderBy('nombre','asc')
+        ->get();
+        return view('ventas.create',compact('clientes','productos'));
     }
     public function store(Request $request){
         $venta = new Venta();

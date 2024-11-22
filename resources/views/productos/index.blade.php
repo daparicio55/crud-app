@@ -2,11 +2,11 @@
 @section('section_title', 'Lista de Productos')
 @section('content')
     <div class="container">
-        <h1>Lista de Productitos</h1>
+        <h2 class="h2">Lista de Productitos</h2>
         <a class="btn btn-primary" href="{{ route('productos.create') }}">
             Registrar Nuevo
         </a>
-        <table class="table">
+        <table class="table bg-transparent border">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -19,11 +19,11 @@
             <tbody>
                 @foreach ($productos as $producto)
                     <tr>
-                        <td>{{ $producto->id }}</td>
-                        <td>{{ $producto->nombre }}</td>
-                        <td>{{ $producto->codigo }}</td>
-                        <td>{{ $producto->precio }}</td>
-                        <td>
+                        <td class="bg-transparent">{{ $producto->id }}</td>
+                        <td class="bg-transparent">{{ $producto->nombre }}</td>
+                        <td class="bg-transparent">{{ $producto->codigo }}</td>
+                        <td class="bg-transparent">{{ $producto->precio }}</td>
+                        <td class="bg-transparent">
                             <a href="{{ asset('/productos/' . $producto->id . '/edit') }}" class="btn btn-success">
                                 Editar
                             </a>

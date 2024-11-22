@@ -15,7 +15,7 @@
         <a class="btn btn-primary" href="{{ asset('/clientes/create') }}">
             Registrar Nuevo
         </a>
-        <table class="table">
+        <table class="table bg-transparent">
             <thead>
                 <tr>
                     <th>ID</th>
