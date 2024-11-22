@@ -1,4 +1,3 @@
-
 @extends('layouts.main')
 @section('section_title', 'Lista de Productos')
 @section('content')
