@@ -9,10 +9,6 @@
       </a>
       <a href="https://www.creative-tim.com" class="simple-text logo-normal">
         {{ config('app.name') }}
-        <p class="text-danger p-0 m-0">
-          {{ Route::currentRouteName() }}
-        </p>
-        <p class="text-danger"></p>
         <!-- <div class="logo-image-big">
           <img src="../assets/img/logo-big.png">
         </div> -->
