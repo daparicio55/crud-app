@@ -2,7 +2,7 @@
 @section('section_title', 'Lista de Productos')
 @section('content')
     <div class="container">
-        <h2 class="h2">Lista de Productitos</h2>
+        <h2 class="h2">Lista de Productos</h2>
         <a class="btn btn-primary" href="{{ route('productos.create') }}">
             Registrar Nuevo
         </a>
@@ -28,8 +28,7 @@
                                 Editar
                             </a>
                             <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-danger" data-bs-toggle="modal"
-                                data-bs-target="#modal-delete-{{ $producto->id }}">
+                            <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-delete-{{ $producto->id }}">
                                 Eliminar
                             </button>
                             @include('productos.modal')
